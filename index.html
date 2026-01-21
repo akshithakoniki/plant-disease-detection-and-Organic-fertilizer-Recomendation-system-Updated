@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrowSafe: Plant Disease Diagnostics and Organic Care</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>GrowSafe: Plant Disease Diagnostics and Organic Care</h1>
+        <p>Empower your gardening with GrowSafe, the ultimate app for plant disease detection and organic reduction.</p>
+    </header>
+    <main>
+        <section id="disease-detection">
+            <h2>Plant Disease Detection</h2>
+            <video id="camera" autoplay playsinline></video>
+            <button onclick="capturePhoto()">Capture Photo</button>
+            <input type="file" id="imageInput" accept="image/*">
+            <button onclick="uploadPhoto()">Upload Photo</button>
+            <canvas id="canvas" style="display:none;"></canvas>
+            <div id="diseaseResult"></div>
+            <div id="organicReduction" style="display:none;">
+                <h3>Organic Reduction Techniques</h3>
+                <p id="reductionDescription"></p>
+            </div>
+            <div id="manureMaking" style="display:none;">
+                <h3>Process of Manure Making</h3>
+                <div id="manureDescription"></div>
+            </div>
+        </section>
+    </main>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
